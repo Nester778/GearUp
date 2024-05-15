@@ -1,0 +1,14 @@
+.map {
+    position: relative;
+    margin-top: 196px;
+}
+
+.map__info {
+    position: absolute;
+    top: 192px;
+    left: 456px;
+    width: 561px;
+    height: 364px;
+    border-radius: 15px;
+    background-color: #fff;
+}

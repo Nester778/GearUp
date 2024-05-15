@@ -1,0 +1,98 @@
+.services {
+    top: 40px !important;
+    max-width: 1524px;
+}
+
+.services__header h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.services__header-btns {
+    display: flex;
+    column-gap: 50px;
+}
+
+.services__header-btn {
+    padding: 11px 29px;
+    cursor: pointer;
+    border-radius: 70px;
+    border: 1px solid white;
+}
+
+.services__header-btn h5 {
+    color: white;
+}
+
+.active-btn {
+    background: var(--yellow);
+    border: none;
+}
+
+.active-btn h5 {
+    color: black;
+}
+
+.services__cards-btn {
+    width: 47px;
+    height: 47px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services__cards-btn svg {
+    user-select: none;
+}
+
+.services__cards-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 55px;
+    margin-top: 134px;
+}
+
+.services__cards-window {
+    width: 1317px;
+    overflow: hidden;
+    display: flex;
+}
+
+.services__cards-container {
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+    transition: all 500ms ease;
+}
+
+.item {
+    background-color: red;
+
+}
+
+.services__pages-wrapper {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 125px;
+}
+
+.services__pages {
+    display: flex;
+    column-gap: 38px;
+}
+
+.services__page {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: all 150ms ease-in;
+}
+
+.page-active {
+    background-color: #ffee53;
+}

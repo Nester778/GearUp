@@ -1,0 +1,26 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    height: 80px;
+}
+
+.nav-bar__components {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar__right-components-item {
+    display: flex;
+}
+
+.nav-bar__right-components-item svg {
+    margin-right: 10px;
+}
+
+.nav-bar__right-components-item p {
+    color: #A3A3A3;
+}

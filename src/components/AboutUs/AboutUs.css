@@ -1,0 +1,41 @@
+.aboutUs__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 77px;
+    margin-bottom: 86px;
+
+    background-color: #F3F4F6;
+}
+
+.aboutUs__container img {
+    height: 100%;
+}
+
+.aboutUs__text {
+    max-width: 880px;
+    margin-left: 100px;
+    margin-right: 70px;
+}
+
+.aboutUs__text h5 {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.aboutUs__text-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 122px;
+    grid-row-gap: 0px;
+}
+
+.aboutUs__text-bottom h1 {
+    color: var(--yellowText);
+}
+
+.aboutUs__text-bottom h4 {
+    color: #737373;
+}

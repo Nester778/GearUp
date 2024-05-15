@@ -1,0 +1,25 @@
+.howWeWorkCard {
+    max-width: 274px;
+}
+
+.howWeWorkCard__img {
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howWeWorkCard h3 {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.howWeWorkCard h5 {
+    text-align: center;
+}

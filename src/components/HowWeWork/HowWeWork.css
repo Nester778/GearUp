@@ -1,0 +1,27 @@
+.howWeWork {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.howWeWork h2 {
+    text-align: center;
+}
+
+.howWeWork__cards-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.howWeWork__card-secondary {
+    margin-top: 38px;
+}
+
+.arrowUp {
+    position: relative;
+    margin-top: -200px;
+}
+
+.arrowDown {
+    top: 60px;
+}

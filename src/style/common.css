@@ -1,0 +1,17 @@
+:root {
+    --text: #171717;
+    --yellow: linear-gradient(135deg, #EAB308 49.75%, #EDD502 136.56%);
+    --yellowText: #EAB308;
+}
+
+body {
+    font-family: "Montserrat";
+    background-color: var(--bgc);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1524px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
