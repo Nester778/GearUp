@@ -15,3 +15,22 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.secvice-icon {
+    fill: #818181;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+}

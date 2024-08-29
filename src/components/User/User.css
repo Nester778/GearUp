@@ -1,0 +1,44 @@
+.user-page {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 297px);
+    /* Отключим на меньших экранах через медиа-запрос */
+}
+
+.user-wrapper {
+    display: grid;
+    grid-template-columns: 258px auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 35px;
+}
+
+.user-content {
+    padding-top: 50px;
+    padding-left: 130px;
+}
+
+/* Адаптивность для планшетов и мобильных устройств */
+@media (max-width: 1024px) {
+    .user-page {
+        min-height: unset;
+        /* Отключаем min-height */
+    }
+
+    .user-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .user-content {
+        padding-top: 30px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-content {
+        padding-top: 20px;
+    }
+}

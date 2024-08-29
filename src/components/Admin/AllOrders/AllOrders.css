@@ -1,0 +1,62 @@
+.myOrders h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.myOrders-pages-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid #d6d6d6;
+    padding-top: 34px;
+    margin-top: 60px;
+
+    user-select: none;
+}
+
+.myOrders-pages {
+    display: flex;
+    column-gap: 70px;
+}
+
+.myOrders-pages-page-wrapper {
+    display: flex;
+    column-gap: 30px;
+}
+
+.myOrders-pages-btn {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #EAB308;
+}
+
+.myOrders-pages-page {
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #d6d6d6;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.active-page {
+    color: #EAB308;
+    border: 1px solid #EAB308;
+}

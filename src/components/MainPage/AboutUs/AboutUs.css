@@ -1,0 +1,99 @@
+.aboutUs__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 77px;
+    margin-bottom: 86px;
+    background-color: #F3F4F6;
+    padding: 20px;
+}
+
+.aboutUs__left-img,
+.aboutUs__right-img {
+    flex: 1;
+    max-width: 300px;
+}
+
+.aboutUs__left-img img,
+.aboutUs__right-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Обеспечиваем сохранение пропорций */
+}
+
+.aboutUs__text {
+    flex: 2;
+    max-width: 880px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.aboutUs__text h5 {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.aboutUs__text-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-top: 20px;
+}
+
+.aboutUs__text-bottom h1 {
+    color: var(--yellowText);
+}
+
+.aboutUs__text-bottom h4 {
+    color: #737373;
+}
+
+@media (max-width: 1024px) {
+    .aboutUs__container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .aboutUs__left-img,
+    .aboutUs__right-img {
+        max-width: 80%;
+        /* Изображения занимают 80% ширины */
+        margin-bottom: 20px;
+        /* Отступ между изображениями и текстом */
+    }
+
+    .aboutUs__text {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .aboutUs__text-bottom {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .aboutUs__left-img,
+    .aboutUs__right-img {
+        max-width: 100%;
+        /* Изображения занимают всю ширину экрана */
+    }
+
+    .aboutUs__text {
+        padding: 0 10px;
+        /* Уменьшенные отступы по бокам */
+    }
+
+    .aboutUs__text-bottom {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}

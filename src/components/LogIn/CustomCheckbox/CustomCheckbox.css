@@ -1,0 +1,30 @@
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #818181;
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 17px;
+}
+
+.checkbox-container h4 {
+    color: #818181;
+    font-weight: 400;
+}

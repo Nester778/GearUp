@@ -1,0 +1,281 @@
+.myOrdersCard {
+    max-width: 1137px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 10px 15px;
+
+    margin-bottom: 30px;
+}
+
+.myOrdersCard-header {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.myOrdersCard-header p {
+    font-size: 14px;
+}
+
+.myOrdersCard-header h5 {
+    font-size: 18px;
+}
+
+.myOrdersCard-content-user p {
+    font-size: 14px;
+}
+
+.myOrdersCard-content-sum p {
+    font-size: 14px;
+}
+
+.myOrdersCard-content-sum h5 {
+    font-size: 18px;
+}
+
+.myOrdersCard-header-left {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.myOrdersCard-header-left-wrapper {
+    display: flex;
+    column-gap: 26px;
+    align-items: center;
+}
+
+.myOrdersCard-header-left-wrapper h5 {
+    font-weight: 700;
+}
+
+.myOrdersCard-header-left-order-status {
+    margin-top: 2px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.red {
+    color: #B91C1C;
+}
+
+.yellow {
+    color: #EDD502;
+}
+
+.green {
+    color: #16A34A;
+}
+
+.myOrdersCard-header-center {
+    display: flex;
+    justify-content: center;
+}
+
+.myOrdersCard-header-center-content h5 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.myOrdersCard-header-center-content p {
+    text-align: center;
+}
+
+.center-content {
+    display: none;
+}
+
+.myOrdersCard-header-right {
+    display: flex;
+    justify-content: end;
+}
+
+.myOrdersCard-header-right-content {
+    display: flex;
+    column-gap: 9px;
+    align-items: center;
+}
+
+.myOrdersCard-header-right-content-cost p {
+    text-align: center;
+}
+
+.myOrdersCard-header-right-content-cost h5 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.content-cost {
+    display: none;
+}
+
+.myOrdersCard-header-right-content-icon {
+    transition: all 300ms ease;
+}
+
+.icon-rotate {
+    transform: rotate(180deg);
+}
+
+.myOrdersCard-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 300ms ease;
+
+    display: grid;
+    grid-template-columns: 258px auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.myOrdersCard-content.open {
+    max-height: 100vh;
+    padding: 10px 0px;
+}
+
+.myOrdersCard-content-user {
+    border-right: 1px solid #D9D9D9;
+}
+
+.myOrdersCard-content-user-wrapper {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 14px;
+}
+
+.myOrdersCard-content-user-title {
+    font-size: 12px;
+}
+
+.myOrdersCard-content-work {
+    display: flex;
+    flex-direction: column;
+}
+
+.myOrdersCard-content-sum {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-grow: 1;
+}
+
+.myOrdersCard-content-sum-wrapper {
+    margin-top: 20px;
+}
+
+.myOrdersCard-content-sum-wrapper p {
+    text-align: center;
+}
+
+.myOrdersCard-content-sum-wrapper h5 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.myOrdersCard-content-btn {
+    display: flex;
+    column-gap: 40px;
+    justify-content: end;
+}
+
+.content-btn {
+    margin: 25px 0 0 0;
+    padding: 0 23px;
+
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--yellowText);
+    border-radius: 5px;
+
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.content-btn:hover {
+    background-color: var(--yellowText);
+}
+
+.content-btn:hover p {
+    color: #ffffff;
+}
+
+.content-btn p {
+    color: var(--yellowText);
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 200ms ease-in-out;
+}
+
+.content-btn-cancel {
+    margin: 25px 0 0 0;
+    padding: 0 23px;
+
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #818181;
+    border-radius: 5px;
+
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.content-btn-cancel:hover {
+    background-color: #818181;
+}
+
+.content-btn-cancel:hover p {
+    color: #ffffff;
+}
+
+.content-btn-cancel p {
+    color: #818181;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 200ms ease-in-out;
+}
+
+.content-btn-finish {
+    margin: 25px 0 0 0;
+    padding: 0 23px;
+
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #16A34A;
+    border-radius: 5px;
+
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.content-btn-finish:hover {
+    background-color: #16A34A;
+}
+
+.content-btn-finish:hover p {
+    color: #ffffff;
+}
+
+.content-btn-finish p {
+    color: #16A34A;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 200ms ease-in-out;
+}

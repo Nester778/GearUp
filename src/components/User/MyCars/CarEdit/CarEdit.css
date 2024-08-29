@@ -1,0 +1,64 @@
+.carEdit {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carEdit h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.carEdit-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carEdit__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.carEdit__field label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.carEdit__field input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.carEdit__field input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.carEdit__btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.carEdit__btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,61 @@
+.howWeWork {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.howWeWork h2 {
+    text-align: center;
+}
+
+.howWeWork__cards-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    /* Добавлено для лучшей адаптивности */
+    row-gap: 50px;
+    /* Расстояние между рядами на малых экранах */
+}
+
+.howWeWork__card-secondary {
+    margin-top: 38px;
+}
+
+.arrowUp {
+    position: relative;
+    margin-top: -200px;
+    margin-bottom: -50px;
+    /* Добавлено для компенсации отступов на малых экранах */
+}
+
+.arrowDown {
+    top: 60px;
+    margin-bottom: -50px;
+    /* Добавлено для компенсации отступов на малых экранах */
+}
+
+@media (max-width: 768px) {
+    .howWeWork__cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrowUp,
+    .arrowDown {
+        position: static;
+        /* Убираем абсолютное позиционирование на малых экранах */
+        margin: 0;
+        /* Сбрасываем отступы */
+    }
+
+    .howWeWork__card-secondary {
+        margin-top: 20px;
+        /* Уменьшенный отступ на мобильных */
+    }
+
+    .howWeWorkCard {
+        max-width: 100%;
+        margin-bottom: 20px;
+        /* Добавляем отступ между карточками */
+    }
+}

@@ -1,0 +1,98 @@
+.menu {
+    padding-top: 50px;
+    max-width: 100%;
+    /* Меню на всю ширину экрана */
+    min-height: 100%;
+    /* Отключим на меньших экранах через медиа-запрос */
+    flex-grow: 3;
+    position: relative;
+}
+
+.menu li {
+    margin-top: 10px;
+    color: #171717;
+}
+
+.personalData {
+    margin-bottom: 20px;
+}
+
+.menu__item {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    /* Отступы для удобства */
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Иконка с левой стороны */
+}
+
+/* Адаптивность для планшетов и мобильных устройств */
+@media (max-width: 1024px) {
+    .menu {
+        padding-top: 20px;
+        min-height: unset;
+        /* Отключаем min-height */
+        max-width: 100%;
+        /* Меню на всю ширину экрана */
+        border: none;
+        /* Убираем все границы */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Показать кнопку бургера */
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 1000;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        /* Добавлена анимация открытия/закрытия */
+    }
+
+    .menu-list.open {
+        max-height: 400px;
+        /* Открытое состояние */
+    }
+
+    .menu__item {
+        justify-content: flex-start;
+        padding: 10px 20px;
+        /* Добавлены отступы для элементов меню */
+        border-bottom: 1px solid #D9D9D9;
+        /* Добавляем нижнюю границу для разделения элементов */
+    }
+
+    .menu__item:last-child {
+        border-bottom: none;
+        /* Убираем нижнюю границу у последнего элемента */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding-top: 10px;
+    }
+
+    .menu__item {
+        column-gap: 5px;
+    }
+}

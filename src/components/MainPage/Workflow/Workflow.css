@@ -1,0 +1,119 @@
+.title {
+    margin-top: 42px;
+    margin-bottom: 80px;
+}
+
+.title h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.desc-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.desc-wrapper h4 {
+    max-width: 545px;
+    text-align: center;
+}
+
+.title h4 span {
+    color: var(--yellowText);
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+    flex-wrap: wrap;
+    /* Позволяет колонкам переноситься на следующую строку */
+}
+
+.column {
+    flex: 1;
+    /* Колонки растягиваются на всю ширину */
+    max-width: 492px;
+    /* Ограничиваем максимальную ширину */
+    position: relative;
+    margin-bottom: 24px;
+    /* Отступы между колонками */
+}
+
+.column:not(:last-child) {
+    margin-right: 24px;
+    /* Отступы между колонками */
+}
+
+.image-container {
+    width: 100%;
+    /* Контейнер занимает всю ширину колонки */
+    overflow: hidden;
+    /* Скрываем выходящие за рамки части изображения */
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 24px;
+    /* Отступы между изображениями в колонках */
+}
+
+.top-image-container {
+    aspect-ratio: 492 / 743;
+    /* Задаем соотношение сторон для верхнего изображения */
+}
+
+.bottom-image-container {
+    aspect-ratio: 492 / 462;
+    /* Задаем соотношение сторон для нижнего изображения */
+}
+
+.top-image,
+.bottom-image {
+    width: 100%;
+    /* Изображения занимают всю ширину контейнера */
+    height: 100%;
+    object-fit: cover;
+    /* Обеспечивает покрытие контейнера, сохраняя пропорции */
+}
+
+.column:nth-child(2) {
+    top: -30px;
+    /* Смещаем среднюю колонку на 30px вверх */
+}
+
+@media (min-width: 768px) {
+    .img-container {
+        flex-wrap: nowrap;
+        /* Возвращаем горизонтальное расположение */
+    }
+
+    .column {
+        max-width: 30%;
+        /* Колонки занимают 30% ширины контейнера */
+    }
+
+    .column:nth-child(2) {
+        top: -30px;
+        /* Смещение средней колонки */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .img-container {
+        margin-bottom: 90px;
+        /* Уменьшаем нижний отступ */
+    }
+
+    .column {
+        margin-bottom: 16px;
+    }
+
+    .image-container {
+        border-radius: 10px;
+        /* Уменьшаем радиус скругления */
+    }
+}

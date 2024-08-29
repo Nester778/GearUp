@@ -1,0 +1,63 @@
+.login-page {
+    position: relative;
+    width: 100%;
+    max-width: 426px;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+
+.login-page__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.login-page h3 {
+    padding: 30px 0 10px;
+    text-align: center;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.login-page__checkBox-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkBox-wrapper {
+    display: flex;
+}
+
+.checkBox-wrapper h4 {
+    font-weight: 400;
+}
+
+.login-page__reset-password {
+    color: var(--yellowText);
+    font-weight: 400;
+}
+
+.login-page__btn {
+    margin-top: 20px;
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    background-color: var(--yellowText);
+}
+
+.login-page__btn h4 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-page__registration-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-page__registration-wrapper h4 {
+    color: var(--yellowText);
+    font-weight: 400;
+}

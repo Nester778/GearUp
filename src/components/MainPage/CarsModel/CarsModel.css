@@ -1,0 +1,79 @@
+.carsModel {
+    padding: 40px 0;
+    /* Добавляем отступы сверху и снизу */
+    background-color: #F3F4F6;
+    /* Цвет фона */
+}
+
+.yellow-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: yellow;
+}
+
+.carsModel__title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    /* Отступ снизу */
+}
+
+.carsModel h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    /* Размер шрифта для заголовка */
+}
+
+.carsModel__cars-logo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Располагаем логотипы в 5 колонок */
+    grid-gap: 20px;
+    /* Добавляем отступы между логотипами */
+    justify-items: center;
+    /* Центрируем логотипы */
+    align-items: center;
+}
+
+.carsModel__cars-logo img {
+    max-width: 100px;
+    /* Ограничиваем максимальную ширину логотипов */
+    max-height: 60px;
+    /* Ограничиваем максимальную высоту логотипов */
+    object-fit: contain;
+    /* Сохраняем пропорции логотипов */
+}
+
+@media (max-width: 1024px) {
+    .carsModel__cars-logo {
+        grid-template-columns: repeat(4, 1fr);
+        /* На планшетах - 4 колонки */
+    }
+}
+
+@media (max-width: 768px) {
+    .carsModel__cars-logo {
+        grid-template-columns: repeat(3, 1fr);
+        /* На мобильных - 3 колонки */
+    }
+
+    .carsModel h2 {
+        font-size: 20px;
+        /* Уменьшаем размер заголовка */
+    }
+}
+
+@media (max-width: 480px) {
+    .carsModel__cars-logo {
+        grid-template-columns: repeat(2, 1fr);
+        /* На очень узких экранах - 2 колонки */
+    }
+
+    .carsModel__cars-logo img {
+        max-width: 80px;
+        /* Уменьшаем размер логотипов на маленьких экранах */
+        max-height: 50px;
+    }
+}

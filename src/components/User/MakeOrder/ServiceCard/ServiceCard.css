@@ -1,0 +1,76 @@
+.serviceCard {
+    border-bottom: 1px solid #D9D9D9;
+    padding: 10px 0;
+}
+
+.service-icon {
+    fill: #818181;
+}
+
+.serviceCard p {
+    font-size: 14px;
+}
+
+.serviceCard h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.serviceCard-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 300ms ease;
+}
+
+.serviceCard-content.open {
+    max-height: 100vh;
+    padding: 10px 0px;
+}
+
+.serviceCard-content-items-item-title {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.serviceCard-content-items-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #d6d6d6;
+    user-select: none;
+
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.serviceCard-add-service {
+    display: flex;
+    justify-content: center;
+
+}
+
+.serviceCard-add-service h5 {
+    color: var(--yellowText);
+}
+
+.text-centr {
+    text-align: center;
+}
+
+.serviceCard-quantity {
+    margin: 0 auto;
+    display: flex;
+    column-gap: 12px;
+}
+
+.serviceCard-quantity h5 {
+    font-weight: 400;
+}
+
+.content-price {
+    text-align: center;
+}

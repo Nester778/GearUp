@@ -1,0 +1,127 @@
+.chooseUs__title {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.chooseUs {
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 50px 130px 88px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 90px;
+}
+
+.chooseUs__item {
+    max-width: 361px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.chooseUs__item-img {
+    width: 61px;
+    height: 61px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--yellow);
+}
+
+.chooseUs__item-text {
+    width: 270px;
+}
+
+.chooseUs__item-text h3 {
+    color: var(--yellowText);
+    margin-bottom: 15px;
+}
+
+/* Media Queries */
+
+/* От 1024px до 1400px */
+@media (max-width: 1400px) and (min-width: 1025px) {
+    .chooseUs {
+        padding: 40px 60px 70px;
+        /* Уменьшаем внутренние отступы */
+    }
+
+    .chooseUs__item-text {
+        width: 100%;
+        /* Увеличиваем ширину текста для предотвращения переполнения */
+    }
+
+    .chooseUs__item {
+        max-width: 300px;
+        /* Уменьшаем максимальную ширину элементов */
+        column-gap: 20px;
+        /* Уменьшаем промежутки между изображением и текстом */
+    }
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .chooseUs {
+        padding: 40px 80px 70px;
+        flex-direction: column;
+        /* Переключаемся на столбчатую структуру */
+        align-items: center;
+        /* Выравниваем элементы по центру */
+        row-gap: 40px;
+        /* Расстояние между элементами */
+    }
+
+    .chooseUs__item {
+        max-width: 100%;
+        flex-direction: column;
+        /* Ставим иконку над текстом */
+        align-items: center;
+        text-align: center;
+        /* Центрируем текст */
+        row-gap: 20px;
+    }
+
+    .chooseUs__item-img {
+        margin-bottom: 20px;
+    }
+
+    .chooseUs__item-text {
+        width: 100%;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .chooseUs {
+        padding: 30px 40px 50px;
+    }
+
+    .chooseUs__item {
+        max-width: 100%;
+    }
+
+    .chooseUs__title {
+        font-size: 24px;
+        /* Уменьшаем размер шрифта для заголовка */
+        margin-bottom: 40px;
+    }
+
+    .chooseUs__item-text h3 {
+        font-size: 20px;
+        /* Уменьшаем размер шрифта для заголовка */
+    }
+
+    .chooseUs__item-text h5 {
+        font-size: 14px;
+        /* Уменьшаем размер шрифта для текста */
+    }
+}

@@ -1,0 +1,91 @@
+.personalData h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.personalData__icon {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.personalData__icon img {
+    width: 150px;
+    height: 150px;
+}
+
+.personalData-wrapper {
+    display: flex;
+    column-gap: 70px;
+}
+
+.personalData__name {
+    max-width: 534px;
+    display: grid;
+    grid-template-columns: repeat(3, 252px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+
+.personalData__name-header {
+    font-size: 14px;
+}
+
+.personalData__name-cell {
+    font-size: 18px;
+}
+
+.personalData__contacts {
+    margin-top: 40px;
+    max-width: 534px;
+    display: grid;
+    grid-template-columns: repeat(2, 252px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+
+.personalData__edit {
+    margin: 50px 0px;
+
+    width: 142px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--yellowText);
+    border-radius: 5px;
+
+    transition: all 300ms ease-in-out;
+}
+
+.personalData__edit:hover {
+    background-color: var(--yellowText);
+}
+
+.personalData__edit:hover p {
+    color: white;
+}
+
+.personalData__edit p {
+    color: var(--yellowText);
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 200ms ease-in-out;
+}
+
+.personalData__line {
+    margin-bottom: 30px;
+    min-width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+}
+
+.logOut {
+    margin-top: 10px;
+    cursor: pointer;
+}

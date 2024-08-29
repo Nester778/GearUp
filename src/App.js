@@ -1,31 +1,42 @@
-import AboutUs from './components/AboutUs/AboutUs';
-import CarsModel from './components/CarsModel/CarsModel';
-import ChooseUs from './components/ChooseUs/ChooseUs';
-import Footer from './components/Footer/Footer';
-import HowWeWork from './components/HowWeWork/HowWeWork';
-import MainScreen from './components/MainScreen/MainScreen';
-import MapNav from './components/Map/Map';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import NavBar from './components/NavBar/NavBar';
+import MainPage from './components/MainPage/MainPage';
+import LogIn from './components/LogIn/LogIn';
+import SendCode from './components/ResetPassword/SendCode/SendCode';
+import EnterCode from './components/ResetPassword/EnterCode/EnterCode';
+import CreateNewPass from './components/ResetPassword/CreateNewPass/CreateNewPass';
 import Registration from './components/Registration/Registration';
-import Reviews from './components/Reviews/Reviews';
-import Services from './components/Services/Services';
-import Workflow from './components/Workflow/Workflow';
+import User from './components/User/User';
+import Footer from './components/Footer/Footer';
+import Admin from "./components/Admin/Admin"
+import { UserProvider } from './components/User/UserContext';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <MainScreen />
-      <ChooseUs />
-      <Services />
-      <HowWeWork />
-      <AboutUs />
-      <CarsModel />
-      <Workflow />
-      <Reviews />
-      <Registration />
-      <Footer />
-    </div>
+
+    <Router>
+      <UserProvider>
+        <NavBar />
+        <main className='main'>
+          <Routes>
+            <Route path="/GearUp" exact element={<MainPage />} />
+            <Route path="/LogIn" exact element={<LogIn />} />
+            <Route path="/SendCode" exact element={<SendCode />} />
+            <Route path="/EnterCode" exact element={<EnterCode />} />
+            <Route path="/CreateNewPass" exact element={<CreateNewPass />} />
+            <Route path="/Registration" exact element={<Registration />} />
+            <Route path="/User/*" element={<User />} />
+            <Route path="/Admin/*" element={<Admin />} />
+          </Routes>
+        </main>
+        {/*<Footer />*/}
+      </UserProvider>
+    </Router>
+
   );
 }
 

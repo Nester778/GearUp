@@ -1,0 +1,22 @@
+.resetPassword__desc {
+    display: flex;
+    justify-content: center;
+}
+
+.resetPassword__desc h5 {
+    max-width: 360px;
+    text-align: center;
+    color: #818181;
+}
+
+.reset-btn {
+    margin-top: 0;
+}
+
+.reset-link {
+    justify-content: start;
+}
+
+.reset-link h4 {
+    margin-top: 2px;
+}

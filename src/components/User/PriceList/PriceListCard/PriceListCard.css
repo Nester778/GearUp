@@ -1,0 +1,101 @@
+.priceListCard {
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-bottom: 30px;
+}
+
+.priceListCard-open {
+    padding-bottom: 50px;
+}
+
+.priceListCard p {
+    font-size: 14px;
+}
+
+.priceListCard h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.priceListCard-header {
+    transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.priceListCard-header-icon {
+    display: flex;
+    align-items: center;
+}
+
+.priceListCard-header-icon-wrapper {
+    overflow: hidden;
+    max-width: 45px;
+    transition: all 300ms ease;
+    margin-right: 30px;
+}
+
+.icon-wrapper {
+    max-width: 0;
+    height: 45px;
+    margin-right: 0;
+}
+
+.priceListCard-icon {
+    width: 90px;
+    height: 90px;
+}
+
+.priceListCard-big-icon-wrapper {
+    overflow: hidden;
+    max-width: 90px;
+    transition: all 300ms ease;
+}
+
+.big-icon-wrapper {
+    max-width: 0;
+    height: 90px;
+}
+
+.priceListCard-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 300ms ease;
+
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.priceListCard-content.open {
+    max-height: 100vh;
+    padding: 10px 0px;
+}
+
+.priceListCard-big-icon {
+    padding-left: 10px;
+    max-width: 90px;
+}
+
+.priceListCard-big-icon p {
+    text-align: center;
+}
+
+.priceListCard-content-items {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.priceListCard-content-items-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.priceListCard-content-items-item-title {
+    font-weight: 400 !important;
+}

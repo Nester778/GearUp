@@ -1,0 +1,109 @@
+.makeOrder-star {
+    fill: #D9D9D9;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.makeFeedback__service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.makeFeedback__service-card {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    padding: 15px;
+
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.makeFeedback__services-title {
+    margin: 20px 0;
+}
+
+.makeFeedback__text-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.makeFeedback__text-user-title-input {
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+.makeFeedback__text-user-title {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 10px;
+}
+
+.makeFeedback__text-user-content {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.makeFeedback__text-user-content-textarea {
+    min-width: 100%;
+    min-height: 150px;
+    padding: 10px;
+
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: #F9F9F9;
+    color: #333;
+
+    resize: vertical;
+    box-shadow: none;
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+.actice-feedback-service svg {
+    fill: #EAB308;
+}
+
+.actice-feedback-service h4 {
+    color: #EAB308;
+}
+
+.makeOrder__grade-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.makeOrder__grade-body {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.makeOrder__grade-body-number {
+    min-width: 68px;
+}
+
+.makeOrder__grade-body-number h1 {
+    color: #A3A3A3;
+    text-align: center;
+}
+
+.makeOrder__grade-body-stars {
+    display: flex;
+    column-gap: 3px;
+}
+
+.makeOrder-active-stars svg {
+    fill: #EAB308;
+}
