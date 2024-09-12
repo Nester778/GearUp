@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GearUp/static/css/main.08fa9b6c.css",
+    "main.css": "/GearUp/static/css/main.c4e825c0.css",
     "main.js": "/GearUp/static/js/main.dbabfd84.js",
     "static/media/bgMainScreen.png": "/GearUp/static/media/bgMainScreen.df5e2e667b4fa2ebb7e4.png",
     "static/media/Services.png": "/GearUp/static/media/Services.a332ad0cefc716e57fc1.png",
@@ -68,11 +68,11 @@
     "static/media/Arrow-left.svg": "/GearUp/static/media/Arrow-left.aa3c2e7affcdf329dabbea40eeca5b24.svg",
     "static/media/Star.svg": "/GearUp/static/media/Star.1219b1b05aedc6d8be8793a704bedc8c.svg",
     "static/media/toggle.svg": "/GearUp/static/media/toggle.c699bcd1385a8cfea9af40974baca617.svg",
-    "main.08fa9b6c.css.map": "/GearUp/static/css/main.08fa9b6c.css.map",
+    "main.c4e825c0.css.map": "/GearUp/static/css/main.c4e825c0.css.map",
     "main.dbabfd84.js.map": "/GearUp/static/js/main.dbabfd84.js.map"
   },
   "entrypoints": [
-    "static/css/main.08fa9b6c.css",
+    "static/css/main.c4e825c0.css",
     "static/js/main.dbabfd84.js"
   ]
 }

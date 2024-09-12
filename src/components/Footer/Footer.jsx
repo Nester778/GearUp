@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll';
 import { useLocation } from 'react-router-dom';
 
-import logo from "./../../img/Logo.svg"
+import logo from "./../../img/LogoFooter.svg"
 import facebook from "./../../img/facebook.svg";
 import telegram from "./../../img/telegram.svg";
 import whatsapp from "./../../img/whatsapp.svg";
