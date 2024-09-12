@@ -83,8 +83,6 @@ export default function MyOrdersCard({ order, openStates, setOpenStates }) {
             order.Status = newStatus;
             console.log(order)
             const response = await axios.put(`https://maingearupapi.azurewebsites.net/api/Order/status`, order, {
-                status: newStatus
-            }, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }
