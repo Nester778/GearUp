@@ -44,6 +44,16 @@ export default function ServiceCard({ serviceItem, updateTotalAmount, onServiceC
         }
     };
 
+    const handleRemoveAllService = (index) => {
+        if (quantities[index] > 0) {
+            const newQuantities = [...quantities];
+            newQuantities[index] = 0;
+            setQuantities(newQuantities);
+            updateTotalAmount(-(serviceItem.services[index].price * serviceItem.services[index].quantities));
+            onServiceChange(serviceItem.idWork, serviceItem.services[index].title, serviceItem.services[index].price, newQuantities[index]);
+        }
+    };
+
     return (
         <div className={`serviceCard ${open ? 'priceListCard-open' : ''}`}>
             <div className="priceListCard-header" onClick={toggle}>
@@ -85,7 +95,7 @@ export default function ServiceCard({ serviceItem, updateTotalAmount, onServiceC
                                 {quantities[index] > 0 ? (
                                     <Minus
                                         color='#EAB308'
-                                        onClick={() => handleRemoveService(index)}
+                                        onClick={() => handleRemoveAllService(index)}
                                     />
                                 ) : (
                                     <Plus
