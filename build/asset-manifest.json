@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GearUp/static/css/main.9243b891.css",
-    "main.js": "/GearUp/static/js/main.3d98de25.js",
+    "main.js": "/GearUp/static/js/main.733a3960.js",
     "static/media/bgMainScreen.png": "/GearUp/static/media/bgMainScreen.df5e2e667b4fa2ebb7e4.png",
     "static/media/Services.png": "/GearUp/static/media/Services.a332ad0cefc716e57fc1.png",
     "static/media/ReviewsBG.png": "/GearUp/static/media/ReviewsBG.c4a0e76bdbbc2a5e5335.png",
@@ -69,10 +69,10 @@
     "static/media/Star.svg": "/GearUp/static/media/Star.1219b1b05aedc6d8be8793a704bedc8c.svg",
     "static/media/toggle.svg": "/GearUp/static/media/toggle.c699bcd1385a8cfea9af40974baca617.svg",
     "main.9243b891.css.map": "/GearUp/static/css/main.9243b891.css.map",
-    "main.3d98de25.js.map": "/GearUp/static/js/main.3d98de25.js.map"
+    "main.733a3960.js.map": "/GearUp/static/js/main.733a3960.js.map"
   },
   "entrypoints": [
     "static/css/main.9243b891.css",
-    "static/js/main.3d98de25.js"
+    "static/js/main.733a3960.js"
   ]
 }

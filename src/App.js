@@ -33,7 +33,7 @@ function App() {
             <Route path="/Admin/*" element={<Admin />} />
           </Routes>
         </main>
-        {/*<Footer />*/}
+        <Footer />
       </UserProvider>
     </Router>
 
