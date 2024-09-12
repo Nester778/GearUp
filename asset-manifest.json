@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GearUp/static/css/main.c4e825c0.css",
-    "main.js": "/GearUp/static/js/main.dbabfd84.js",
+    "main.js": "/GearUp/static/js/main.9fd29a4c.js",
     "static/media/bgMainScreen.png": "/GearUp/static/media/bgMainScreen.df5e2e667b4fa2ebb7e4.png",
     "static/media/Services.png": "/GearUp/static/media/Services.a332ad0cefc716e57fc1.png",
     "static/media/ReviewsBG.png": "/GearUp/static/media/ReviewsBG.c4a0e76bdbbc2a5e5335.png",
@@ -22,6 +22,7 @@
     "static/media/suspension.png": "/GearUp/static/media/suspension.a6a80e98b0b669ca91e6.png",
     "static/media/User1.png": "/GearUp/static/media/User1.19a41b42d29177c460f5.png",
     "static/media/Logo.svg": "/GearUp/static/media/Logo.8271e056966d5dd259680339edcf6296.svg",
+    "static/media/LogoFooter.svg": "/GearUp/static/media/LogoFooter.095f2f88313428f2d360ba19008c6961.svg",
     "static/media/ford.svg": "/GearUp/static/media/ford.75d0f389364f6bab2f8deae72af7ff56.svg",
     "static/media/HowWeWork1.svg": "/GearUp/static/media/HowWeWork1.1f8a867165a96297c509b190e3291fe7.svg",
     "static/media/tire.svg": "/GearUp/static/media/tire.2a642f078eba6fd6feb165fca7a170f4.svg",
@@ -69,10 +70,10 @@
     "static/media/Star.svg": "/GearUp/static/media/Star.1219b1b05aedc6d8be8793a704bedc8c.svg",
     "static/media/toggle.svg": "/GearUp/static/media/toggle.c699bcd1385a8cfea9af40974baca617.svg",
     "main.c4e825c0.css.map": "/GearUp/static/css/main.c4e825c0.css.map",
-    "main.dbabfd84.js.map": "/GearUp/static/js/main.dbabfd84.js.map"
+    "main.9fd29a4c.js.map": "/GearUp/static/js/main.9fd29a4c.js.map"
   },
   "entrypoints": [
     "static/css/main.c4e825c0.css",
-    "static/js/main.dbabfd84.js"
+    "static/js/main.9fd29a4c.js"
   ]
 }
