@@ -31,7 +31,7 @@ export default function MyOrdersCard({ order, openStates, setOpenStates, onDelet
 
     const handleDelete = async () => {
         try {
-            await axios.delete(`https://maingearupapi.azurewebsites.net/api/Feedback?id=${order.Feedback_Id}`, {
+            await axios.delete(`http://localhost:5251/api/Feedback?id=${order.Feedback_Id}`, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }

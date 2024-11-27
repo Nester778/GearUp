@@ -37,7 +37,7 @@ export default function ServiceCard({ serviceItem, updateTotalAmount, onServiceC
     const handleRemoveService = (index) => {
         if (quantities[index] > 0) {
             const newQuantities = [...quantities];
-            newQuantities[index] = 0;
+            newQuantities[index] = newQuantities[index] - 1;
             setQuantities(newQuantities);
             updateTotalAmount(-serviceItem.services[index].price);
             onServiceChange(serviceItem.idWork, serviceItem.services[index].title, serviceItem.services[index].price, newQuantities[index]);
@@ -48,8 +48,8 @@ export default function ServiceCard({ serviceItem, updateTotalAmount, onServiceC
         if (quantities[index] > 0) {
             const newQuantities = [...quantities];
             newQuantities[index] = 0;
+            updateTotalAmount(-(serviceItem.services[index].price * quantities[index]));
             setQuantities(newQuantities);
-            updateTotalAmount(-(serviceItem.services[index].price * serviceItem.services[index].quantities));
             onServiceChange(serviceItem.idWork, serviceItem.services[index].title, serviceItem.services[index].price, newQuantities[index]);
         }
     };

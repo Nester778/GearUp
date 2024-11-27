@@ -15,7 +15,7 @@ export default function LogIn() {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('https://maingearupapi.azurewebsites.net/api/auth/login', {
+            const response = await axios.post('http://localhost:5251/api/auth/login', {
                 email,
                 pass
             });

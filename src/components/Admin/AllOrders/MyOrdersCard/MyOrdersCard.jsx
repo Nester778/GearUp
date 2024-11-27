@@ -21,7 +21,7 @@ export default function MyOrdersCard({ order, openStates, setOpenStates }) {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await axios.get(`https://maingearupapi.azurewebsites.net/api/User/id?id=${order.User_Id}`, {
+                const response = await axios.get(`http://localhost:5251/api/User/id?id=${order.User_Id}`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }
@@ -82,7 +82,7 @@ export default function MyOrdersCard({ order, openStates, setOpenStates }) {
         try {
             order.Status = newStatus;
             console.log(order)
-            const response = await axios.put(`https://maingearupapi.azurewebsites.net/api/Order/status`, order, {
+            const response = await axios.put(`http://localhost:5251/api/Order/status`, order, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }

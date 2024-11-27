@@ -337,7 +337,7 @@ export default function MakeOrder() {
         console.log(orderData);
 
         try {
-            const response = await axios.post('https://maingearupapi.azurewebsites.net/api/order/create', orderData, {
+            const response = await axios.post('http://localhost:5251/api/order/create', orderData, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'application/json'

@@ -69,7 +69,7 @@ export default function MakeFeedback() {
         }
 
         try {
-            const response = await axios.post('https://maingearupapi.azurewebsites.net/api/feedback/create', feedbackData, {
+            const response = await axios.post('http://localhost:5251/api/feedback/create', feedbackData, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'application/json'

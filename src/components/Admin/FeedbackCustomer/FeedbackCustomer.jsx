@@ -14,7 +14,7 @@ export default function FeedbackCustomer() {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await axios.get(`https://maingearupapi.azurewebsites.net/api/Feedback`, {
+                const response = await axios.get(`http://localhost:5251/api/Feedback`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }
@@ -66,7 +66,7 @@ export default function FeedbackCustomer() {
 
     return (
         <div className="myOrders">
-            <h2>Мої замовлення</h2>
+            <h2>Відгуки клієнтів</h2>
             {pageInfo.length > 0 ? (
                 pageInfo.map((order, index) => (
                     <MyOrdersCard

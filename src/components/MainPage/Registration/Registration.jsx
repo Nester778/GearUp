@@ -27,7 +27,7 @@ export default function Registration() {
         try {
             if (pass === confirmPass) {
 
-                const response = await axios.post('https://maingearupapi.azurewebsites.net/api/auth/register', {
+                const response = await axios.post('http://localhost:5251/api/auth/register', {
                     firstname,
                     surname,
                     phoneNumber,

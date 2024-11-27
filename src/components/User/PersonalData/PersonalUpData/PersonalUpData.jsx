@@ -37,7 +37,7 @@ export default function PersonalUpData() {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.put(`https://maingearupapi.azurewebsites.net/api/user/${userData.User_Id}`, updatedUser, {
+            const response = await axios.put(`http://localhost:5251/api/user/${userData.User_Id}`, updatedUser, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

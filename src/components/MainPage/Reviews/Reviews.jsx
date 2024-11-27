@@ -14,7 +14,7 @@ export default function Reviews() {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await axios.get(`https://maingearupapi.azurewebsites.net/api/Feedback`, {
+                const response = await axios.get(`http://localhost:5251/api/Feedback`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }

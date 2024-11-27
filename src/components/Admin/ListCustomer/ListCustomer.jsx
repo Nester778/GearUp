@@ -14,7 +14,7 @@ export default function ListCustomer() {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const userResponse = await axios.get(`https://maingearupapi.azurewebsites.net/api/User`, {
+                const userResponse = await axios.get(`http://localhost:5251/api/User`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }
@@ -63,7 +63,7 @@ export default function ListCustomer() {
 
     return (
         <div className="myOrders">
-            <h2>Мої замовлення</h2>
+            <h2>Список клієнтів</h2>
             {pageInfo.length > 0 ? (
                 pageInfo.map((user, index) => (
                     <MyOrdersCard

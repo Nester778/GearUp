@@ -12,7 +12,7 @@ export default function MyOrdersCard({ user, openStates, setOpenStates }) {
     useEffect(() => {
         const fetchUserCar = async () => {
             try {
-                const carResponse = await axios.get(`https://localhost:7135/api/car/${user.User_Id}`, {
+                const carResponse = await axios.get(`http://localhost:5251/api/car/${user.User_Id}`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }

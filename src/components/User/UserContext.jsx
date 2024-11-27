@@ -23,7 +23,7 @@ export const UserProvider = ({ children }) => {
 
                     if (decodedToken.exp * 1000 > Date.now()) {
                         // Запрашиваем данные пользователя по email
-                        const userResponse = await axios.get(`https://maingearupapi.azurewebsites.net/api/user/${email}`, {
+                        const userResponse = await axios.get(`http://localhost:5251/api/user/${email}`, {
                             headers: {
                                 'Authorization': `Bearer ${token}`
                             }
@@ -32,7 +32,7 @@ export const UserProvider = ({ children }) => {
 
                         // Если пользователь найден, запрашиваем данные автомобиля
                         if (userResponse.data?.User_Id) {
-                            const carResponse = await axios.get(`https://maingearupapi.azurewebsites.net/api/car/${userResponse.data.User_Id}`, {
+                            const carResponse = await axios.get(`http://localhost:5251/api/car/${userResponse.data.User_Id}`, {
                                 headers: {
                                     'Authorization': `Bearer ${token}`
                                 }

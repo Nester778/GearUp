@@ -37,14 +37,14 @@ export default function PersonalUpData() {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.put(`https://localhost:7135/api/user/${userData.User_Id}`, updatedUser, {
+            const response = await axios.put(`http://localhost:5251/api/user/${userData.User_Id}`, updatedUser, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
             });
 
             console.log('User data updated successfully:', response.data);
-            navigate('/User/PersonalData');
+            navigate('/Admin/PersonalData');
         } catch (error) {
             console.error('Error updating user data', error);
         }

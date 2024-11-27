@@ -32,13 +32,13 @@ export default function CarEdit() {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.put(`https://maingearupapi.azurewebsites.net/api/car/${userData.User_Id}`, updatedCar, {
+            const response = await axios.put(`http://localhost:5251/api/car/${userData.User_Id}`, updatedCar, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
             });
 
-            navigate('/MyCars');
+            navigate('/User/MyCars');
         } catch (error) {
             console.error('Error updating car data', error);
         }

@@ -17,7 +17,7 @@ export default function MyOrders() {
         const fetchUserData = async () => {
             if (userData && userData.User_Id) {
                 try {
-                    const userResponse = await axios.get(`https://maingearupapi.azurewebsites.net/api/order/${userData.User_Id}`, {
+                    const userResponse = await axios.get(`http://localhost:5251/api/order/${userData.User_Id}`, {
                         headers: {
                             'Authorization': `Bearer ${localStorage.getItem('token')}`
                         }
